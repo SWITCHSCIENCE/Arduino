@@ -1892,3 +1892,44 @@ coredev.menu.DebugLevel.OTA2____=OTA + Updater
 coredev.menu.DebugLevel.OTA2____.build.debug_level=-DDEBUG_ESP_OTA -DDEBUG_ESP_UPDATER
 coredev.menu.DebugLevel.all_____=All
 coredev.menu.DebugLevel.all_____.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM
+
+##############################################################
+espr.name=Switch Science ESPr series
+espr.upload.tool=esptool
+espr.upload.speed=921600
+espr.upload.resetmethod=nodemcu
+espr.upload.maximum_size=1044464
+espr.upload.maximum_data_size=81920
+espr.upload.wait_for_upload_port=true
+espr.serial.disableDTR=true
+espr.serial.disableRTS=true
+
+espr.build.mcu=esp8266
+espr.build.f_cpu=160000000L
+espr.build.board=ESP8266_ESP01
+espr.build.core=esp8266
+espr.build.variant=espr
+espr.build.flash_mode=qio
+espr.build.spiffs_pagesize=256
+espr.build.flash_size=4M
+espr.build.flash_freq=80
+espr.build.debug_port=
+espr.build.debug_level=
+
+espr.menu.FlashSize.4M1M=4M (1M SPIFFS)
+espr.menu.FlashSize.4M1M.build.flash_size=4M
+espr.menu.FlashSize.4M1M.build.flash_ld=eagle.flash.4m1m.ld
+espr.menu.FlashSize.4M1M.build.spiffs_start=0x300000
+espr.menu.FlashSize.4M1M.build.spiffs_end=0x3FB000
+espr.menu.FlashSize.4M1M.build.spiffs_blocksize=8192
+espr.menu.FlashSize.4M1M.build.spiffs_pagesize=256
+espr.menu.FlashSize.4M1M.upload.maximum_size=1044464
+
+espr.menu.FlashSize.4M3M=4M (3M SPIFFS)
+espr.menu.FlashSize.4M3M.build.flash_size=4M
+espr.menu.FlashSize.4M3M.build.flash_ld=eagle.flash.4m.ld
+espr.menu.FlashSize.4M3M.build.spiffs_start=0x100000
+espr.menu.FlashSize.4M3M.build.spiffs_end=0x3FB000
+espr.menu.FlashSize.4M3M.build.spiffs_blocksize=8192
+espr.menu.FlashSize.4M3M.build.spiffs_pagesize=256
+espr.menu.FlashSize.4M3M.upload.maximum_size=1044464
